@@ -12,6 +12,7 @@ module.exports = {
   primary500: "#267DFF",
   primary600: "#0063F7",
   primary700: "#004FC5",
+  primaryMidnight: "#000033",
   success50: "#F0FDF4",
   critical500: "#FF3459",
 }

@@ -7,11 +7,12 @@ module.exports = {
   screens: {
     sm: "375px",
     md: "768px",
-    lg: "1110px",
-    xl: "1320px",
+    lg: "960px",
+    xl: "1080px",
   },
 
   extend: {
+    colors,
     boxShadow: {},
     ...typography,
     borderRadius: {
