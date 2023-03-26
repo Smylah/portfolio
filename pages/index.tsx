@@ -62,7 +62,7 @@ export default function App() {
         <div className='md:flex md:justify-around'>
           <div className='md:w-1/2 p-20 border border-gray-50 shadow-md rounded-md'>
             <p>My name is Ikenna Chima, a versatile developer capable of tackling complex projects. I have honed my skills in web development, software engineering, and user experience design through years of experience.</p><br />
-            <p>I understand the importance of effective communication and strive to ensure that my clients are satisfied with the final product. I work collaboratively with clients and stakeholders, taking their input into account throughout the development process and with a keen eye for detail, I am committed to delivering products that not only meet but exceed my clients' expectations.</p><br />
+            <p>I understand the importance of effective communication and strive to ensure that my clients are satisfied with the final product. I work collaboratively with clients and stakeholders, taking their input into account throughout the development process and with a keen eye for detail, I am committed to delivering products that not only meet but exceed my clients expectations.</p><br />
             <p>My passion for software development is evident in the high-quality solutions I produce and my impressive track record and commitment to excellence makes me a valuable asset to any organization or individual.</p>
           </div>
           <div className='md:w-1/3 space-y-24'>
