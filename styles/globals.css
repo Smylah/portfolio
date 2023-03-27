@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    @apply scroll-smooth scroll-mt-20
 }
 .bg-img{
     background: url('../public/scattered-forcefields.svg');
@@ -21,13 +22,13 @@ h3{
     @apply font-semibold text-lg 
 }
 h4{
-    @apply font-medium text-lg uppercase text-blue-900 text-center
+    @apply font-medium text-lg text-blue-900 text-center
 }
 h5{
     @apply font-light text-sm text-primaryMidnight;
 }
 h6{
-    @apply font-medium text-xs
+    @apply font-medium
 }
 p{
     @apply font-normal text-sm md:text-base

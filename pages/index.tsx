@@ -39,7 +39,7 @@ export default function App() {
         <main className='container mx-auto mt-[15vh] md:mt-0 flex flex-col-reverse gap-20 md:gap-0 md:justify-between md:flex-row px-20' >
           <div className='space-y-24'>
             <div className='md:w-[40vw] space-y-12'>
-              <h5>Hello I am <span className='text-blue-900 '>Ikenna</span></h5>
+              <h6>Hello I am <span className='text-blue-900 '>Ikenna</span></h6>
               <div className='font-bold text-3xl md:text-5xl  text-blue-900'>Web/Software <div>Developer</div></div>
               <p> I have an exceptional ability to bring ideas to life, with a passion for creating unique and innovative solutions. I am a skilled and dedicated web and software developer who takes pride in their work and i look forward to creating innovative solutions that meet the unique needs of each of my clients.</p>
             </div>
@@ -82,7 +82,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className='mt-64 mx-auto container px-20'>
+      <section id='services' className='mt-64 mx-auto container px-20'>
         <h1 className='text-left mb-32'>What i do</h1>
         <div className='md:flex space-y-20 md:space-y-0 gap-20 mb-80'>
           <div className='flex items-center gap-10'>
@@ -123,10 +123,10 @@ export default function App() {
         </div>
       </section>
 
-      <section className='container mx-auto my-64 space-y-32 px-20'>
+      <section id='work' className='container mx-auto my-64 space-y-32 px-20'>
         <h1>My Work</h1>
         <main className='lg:flex md:items-start space-y-20 lg:space-y-0 gap-30'>
-          <div className='lg:w-2/3'>
+          <div className='lg:w-2/3 space-y-16'>
             <h4>Personal Projects</h4>
             <Portfolio />
           </div>
@@ -158,7 +158,7 @@ export default function App() {
         </main>
       </section>
 
-      <section className='px-20'>
+      <section id='contact' className='px-20'>
         <div className='container mx-auto rounded-3xl md:flex md:justify-between bg-primaryMidnight p-20 md:p-48  items-center space-y-10 md:space-y-0'>
           <div className='space-y-16 text-white md:mr-[20%]'>
             <h2>Have any project in mind?</h2>

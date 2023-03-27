@@ -42,16 +42,16 @@ const Portfolio = () => {
     {
       technologies: ["Vue", "Tailwind", "Typescript"],
       title: "Untitled app",
-      image: "/../public/picture/ddhub.jpeg",
-      url: "https://smylah.github.io/ddhub/",
+      image: "/../public/picture/untitled-app.png",
+      url: "https://untitled-app.netlify.app/",
       description:
         "used this to showcase my skills in vue typescript and tailwind to a potential employer",
     },
     {
       technologies: ["Vue", "css"],
       title: "Vue Task Tracker",
-      image: "/../public/picture/ddhub.jpeg",
-      url: "https://smylah.github.io/ddhub/",
+      image: "/../public/picture/task-tracker.png",
+      url: "https://vue-task-track.netlify.app/",
       description: "my first Project learning vue",
     },
   ]
@@ -79,7 +79,7 @@ const Portfolio = () => {
               src={image}
               width={350}
               height={100}
-              className="rounded-2xl shadow-md"
+              className="rounded-2xl shadow-md transition ease-in-out duration-500 hover:scale-105"
             />
             <div className="space-y-8">
               <div className="flex flex-wrap gap-4">
@@ -97,13 +97,13 @@ const Portfolio = () => {
               <h3 className="font-medium text-base text-blue-900">{title}</h3>
               <div className="description">
                 <p>{showMore === false ? description : null}</p>
-                <button onClick={handleShowMore}>
+                {/* <button onClick={handleShowMore}>
                   {showMore ? "show more..." : "show less"}
-                </button>
+                </button> */}
               </div>
               <a
                 href={url}
-                className="inline-flex items-center border border-black rounded-lg px-16 py-4 hover:bg-primaryMidnight hover:text-white transition ease-out duration-200"
+                className="inline-flex gap-5 items-center border border-black rounded-lg px-16 py-4 hover:bg-primaryMidnight hover:text-white transition ease-out duration-200"
               >
                 Visit Site <BsArrowRight />
               </a>
