@@ -1,6 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
-import Picture from "../public/picture/mypic.png"
 
 const Header = () => {
   const links = [
@@ -11,9 +9,8 @@ const Header = () => {
   ]
   return (
     <>
-      <nav className="z-50 bg-primaryMidnight fixed top-20 shadow-md rounded-3xl ">
+      <nav className="z-49 bg-primaryMidnight fixed top-20 shadow-md rounded-3xl ">
         <div className="flex gap-20 px-24 py-8 sticky ">
-          <Image src={Picture} className="rounded-full h-20 w-20" />
           {links.map((link, index) => {
             return (
               <>

@@ -4,6 +4,7 @@ import Header from '../components/header'
 import Portfolio from '../components/portfolio/index.jsx'
 import Footer from '../components/footer'
 import Picture from '../public/picture/my-picture.jpeg'
+import Nobg from '../public/picture/Nobg.png'
 import Frontend from '../public/frontend.svg'
 import Responsive from '../public/responsive.svg'
 import First from '../public/picture/Rectangle.png'
@@ -34,11 +35,11 @@ export default function App() {
 
       <section id='heurio' className='flex justify-center md:h-[100vh] md:items-center bg-gradient-to-tr from-gray-300 to-gray-50 bg-img' >
         <Header />
-        <main className='container mx-auto  md:flex md:justify-between px-20' >
+        <main className='container mx-auto mt-[15vh] md:mt-0 flex flex-col-reverse gap-20 md:gap-0 md:justify-between md:flex-row px-20' >
           <div className='space-y-24'>
             <div className='md:w-[40vw] space-y-12'>
-              <p className='text-xl font-medium '>Hello I am <span className='text-blue-900 '>Ikenna</span></p>
-              <div className='font-bold text-3xl md:text-5xl  text-blue-900'>Web/Software <p>Developer</p></div>
+              <h5>Hello I am <span className='text-blue-900 '>Ikenna</span></h5>
+              <div className='font-bold text-3xl md:text-5xl  text-blue-900'>Web/Software <div>Developer</div></div>
               <p> I have an exceptional ability to bring ideas to life, with a passion for creating unique and innovative solutions. I am a skilled and dedicated web and software developer who takes pride in their work and i look forward to creating innovative solutions that meet the unique needs of each of my clients.</p>
             </div>
             <div className='flex space-x-10 '>
@@ -51,14 +52,14 @@ export default function App() {
               })}
             </div >
           </div >
-          <div className='hidden md:inline-block h-400 w-400'>
-            <Image src={Picture} alt='' className='rounded-full border-4 border-primaryMidnight' />
+          <div className='rounded-full border-4 flex border-primaryMidnight bg-gradient-to-bl from-blue-300 via-blue-100 to-blue-50 h-300 w-300 overflow-hidden '>
+            <Image src={Nobg} alt='' className=' hover:scale-105 transition ease-in-out duration-500' />
           </div>
         </main >
       </section >
 
-      <section id='about' className='container mx-auto mt-64 space-y-32'>
-        <h1 className='font-bold text-3xl md:text-5xl text-center'>About Me</h1>
+      <section id='about' className='container mx-auto mt-64 space-y-32 px-20'>
+        <h1 >About Me</h1>
         <div className='md:flex md:justify-around'>
           <div className='md:w-1/2 p-20 border border-gray-50 shadow-md rounded-md'>
             <p>My name is Ikenna Chima, a versatile developer capable of tackling complex projects. I have honed my skills in web development, software engineering, and user experience design through years of experience.</p><br />
@@ -80,16 +81,16 @@ export default function App() {
         </div>
       </section>
 
-      <section className='mt-64 mx-auto container'>
-        <h1 className='font-bold text-3xl md:text-5xl text-center mb-32'>What i do</h1>
-        <div className='flex gap-20 mb-80'>
+      <section className='mt-64 mx-auto container px-20'>
+        <h1 className='text-left mb-32'>What i do</h1>
+        <div className='md:flex space-y-20 md:space-y-0 gap-20 mb-80'>
           <div className='flex items-center gap-10'>
             <div className='p-12 bg-blue-100 rounded-md '>
               <Image src={Frontend} alt='' />
             </div>
             <div>
-              <h3 className='font-normal'>01</h3>
-              <h5 className='text-lg font-semibold'>Frontend Development</h5>
+              <h5 >01</h5>
+              <h3>Frontend Development</h3>
             </div>
           </div>
           <div className='flex items-center gap-10'>
@@ -97,45 +98,40 @@ export default function App() {
               <Image src={Responsive} alt='' />
             </div>
             <div>
-              <h3 className='font-normal'>02</h3>
-              <h5 className='text-lg font-semibold'>Software Development</h5>
+              <h5 >02</h5>
+              <h3>Software Development</h3>
             </div>
           </div>
         </div>
 
         <div className='flex flex-col mt-30 space-y-64'>
-          <div className='flex rounded-3xl border shadow-md p-20'>
-            <div className='space-y-32 p-28'>
-              <h5 className='font-medium text-sm uppercase text-primaryMidnight'>frontend development</h5>
-              <p className='font-semibold text-3xl'>Implementing UX designs into live and user friendly websites</p>
+          <div className='flex flex-col-reverse lg:flex-row rounded-3xl border shadow-md p-20'>
+            <div className='space-y-16 md:space-y-32 md:p-28'>
+              <h5 className='uppercase'>frontend development</h5>
+              <h2>I Implement UX designs into live and user friendly websites</h2>
             </div>
-            <div className='-mt-80'>
-              <Image src={Second} alt='' />
-            </div>
+            <Image src={Second} alt='' className='-mt-80 w-full' />
           </div>
-          <div className='flex rounded-3xl border shadow-md p-20'>
-            <div className='space-y-32 p-28'>
-              <h5 className='font-medium text-sm uppercase text-primaryMidnight'>software development</h5>
-              <p className='font-semibold text-3xl'>Building landing pages, responsive websites and web App</p>
+          <div className='flex flex-col-reverse lg:flex-row rounded-3xl border shadow-md p-20'>
+            <div className='space-y-16 md:space-y-32 md:p-28'>
+              <h5 className='uppercase'>software development</h5>
+              <h2>I also Build landing pages, responsive websites and web Apps for both individual and commercial purposes, small or large scale</h2>
             </div>
-            <div className='-mt-80'>
-              <Image src={Third} alt='' />
-            </div>
+            <Image src={Third} alt='' className='-mt-80 w-full' />
           </div>
         </div>
-
       </section>
 
-      <section className='container mx-auto my-64 space-y-32'>
-        <h1 className='font-bold text-3xl md:text-5xl text-center '>My Work</h1>
+      <section className='container mx-auto my-64 space-y-32 px-20'>
+        <h1>My Work</h1>
         <main className='md:flex'>
           <div className='md:w-2/3'>
-            <h4 className='font-medium text-xl text-blue-900'>Personal Projects</h4>
-            <Portfolio />
+            <h4>Personal Projects</h4>
+            {/* <Portfolio /> */}
           </div>
 
           <div className='md:w-1/3 border border-gray-50 shadow-md rounded-2xl'>
-            <h4 className='font-medium my-16 text-xl text-center text-blue-900'>Work Experience</h4>
+            <h4 className='my-16 '>Work Experience</h4>
             <div className=''>
               {workExperience.map((item, index) => {
                 return (
@@ -144,7 +140,7 @@ export default function App() {
                       <div className='mr-10 rounded-full h-50 w-50 border border-dotted border-primaryMidnight' />
                     </div>
                     <div className=''>
-                      <h5 className='font-bold text-primaryMidnight'>{item.company}</h5>
+                      <h5 className='font-bold'>{item.company}</h5>
                       <p>{item.role}</p>
                     </div>
                     {/* <div>
@@ -161,14 +157,18 @@ export default function App() {
         </main>
       </section>
 
-      <section className='container mx-auto rounded-3xl flex justify-between bg-primaryMidnight p-48 items-center'>
-        <div className='space-y-24 text-white'>
-          <p className='text-3xl font-medium'>Have any project in mind?</p>
-          <p >Let’s work together and I will help you by all my best.</p>
+      <section className='px-20'>
+        <div className='container mx-auto rounded-3xl md:flex md:justify-between bg-primaryMidnight p-20 md:p-48  items-center space-y-10 md:space-y-0'>
+          <div className='space-y-24 text-white md:mr-[20%]'>
+            <h2>Have any project in mind?</h2>
+            <p >Let us work together to bring your ideas to life and take your business to the next level with a powerful online presence.</p>
+          </div>
+          <div className='flex flex-col rounded-lg px-16 py-8 bg-white hover:-translate-y-4 transition ease-in-out duration-500'>
+            <a className='text-sm font-medium text-center whitespace-nowrap '>
+              Lets Talk
+            </a>
+          </div>
         </div>
-        <button className='rounded-3xl px-16 py-8  text-sm font-medium bg-white hover:-translate-y-4 transition ease-in-out duration-500'>
-          Lets Talk
-        </button>
       </section>
 
       <Footer />

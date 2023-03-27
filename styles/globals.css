@@ -11,6 +11,28 @@ body{
     background: url('../public/scattered-forcefields.svg');
 }
 
+h1{
+    @apply font-bold text-center text-3xl md:text-5xl
+}
+h2{
+    @apply font-normal text-xl md:text-3xl
+}
+h3{
+    @apply font-semibold text-lg 
+}
+h4{
+    @apply font-medium text-lg uppercase text-blue-900 text-center
+}
+h5{
+    @apply font-light text-sm text-primaryMidnight;
+}
+h6{
+    @apply font-medium text-xs
+}
+p{
+    @apply font-normal text-sm md:text-base
+}
+
 .animate-header{
     animation: animate 15s ease infinite;
 }
