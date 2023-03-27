@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/header'
-import Portfolio from '../components/portfolio/index.jsx'
+import Portfolio from '../components/portfolio.jsx'
 import Footer from '../components/footer'
 import Picture from '../public/picture/my-picture.jpeg'
 import Nobg from '../public/picture/Nobg.png'
@@ -10,6 +10,7 @@ import Responsive from '../public/responsive.svg'
 import First from '../public/picture/Rectangle.png'
 import Second from '../public/picture/Rectangle1.png'
 import Third from '../public/picture/Rectangle3.png'
+import { BsTwitter, BsLinkedin, BsGithub, BsBriefcase, BsArrowDownCircle } from "react-icons/bs"
 
 export default function App() {
   const tags = ['LinkedIn', 'Github']
@@ -67,7 +68,7 @@ export default function App() {
             <p>My passion for software development is evident in the high-quality solutions I produce and my impressive track record and commitment to excellence makes me a valuable asset to any organization or individual.</p>
           </div>
           <div className='md:w-1/3 space-y-24'>
-            <h1 className='text-center'>My skills and capabilities</h1>
+            <h5 className='text-center'>My skills and capabilities</h5>
             <div className='flex flex-wrap gap-10'>
               {skills.map((skill, index) => {
                 return (
@@ -124,14 +125,14 @@ export default function App() {
 
       <section className='container mx-auto my-64 space-y-32 px-20'>
         <h1>My Work</h1>
-        <main className='md:flex'>
-          <div className='md:w-2/3'>
+        <main className='lg:flex md:items-start space-y-20 lg:space-y-0 gap-30'>
+          <div className='lg:w-2/3'>
             <h4>Personal Projects</h4>
-            {/* <Portfolio /> */}
+            <Portfolio />
           </div>
 
-          <div className='md:w-1/3 border border-gray-50 shadow-md rounded-2xl'>
-            <h4 className='my-16 '>Work Experience</h4>
+          <div className='lg:w-1/3 border border-gray-50 rounded-2xl'>
+            <h4 className='my-16 flex gap-10 justify-center'><BsBriefcase className='h-24 w-24' />Work Experience</h4>
             <div className=''>
               {workExperience.map((item, index) => {
                 return (
@@ -151,7 +152,7 @@ export default function App() {
               })}
             </div>
             <a className='flex flex-col justify-center bg-gray-100 rounded-lg mx-20 my-16 py-8  cursor-pointer hover:bg-primaryMidnight hover:text-white transition ease-in-out duration-500'>
-              <p className='font-medium text-center'>Download Resume</p>
+              <p className='flex justify-center gap-10 items-center'>Download Resume <BsArrowDownCircle /></p>
             </a>
           </div>
         </main>
@@ -159,7 +160,7 @@ export default function App() {
 
       <section className='px-20'>
         <div className='container mx-auto rounded-3xl md:flex md:justify-between bg-primaryMidnight p-20 md:p-48  items-center space-y-10 md:space-y-0'>
-          <div className='space-y-24 text-white md:mr-[20%]'>
+          <div className='space-y-16 text-white md:mr-[20%]'>
             <h2>Have any project in mind?</h2>
             <p >Let us work together to bring your ideas to life and take your business to the next level with a powerful online presence.</p>
           </div>
