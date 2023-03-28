@@ -115,13 +115,13 @@ export default function App() {
 
       <section id='work' className='container mx-auto my-64 space-y-32 px-20'>
         <h1>My Work</h1>
-        <main className='lg:flex md:items-start space-y-20 lg:space-y-0 gap-30'>
+        <main className='flex flex-col-reverse lg:flex-row md:items-start space-y-20 lg:space-y-0 gap-30'>
           <div className='lg:w-2/3 space-y-16'>
             <h4>Personal Projects</h4>
             <Portfolio />
           </div>
 
-          <div className='lg:w-1/3 border border-gray-50 rounded-2xl'>
+          <div className='lg:w-1/3 border border-gray-50 w-full rounded-2xl'>
             <h4 className='my-16 flex gap-10 justify-center'><BsBriefcase className='h-24 w-24' />Work Experience</h4>
             <div className=''>
               {workExperience.map((item, index) => {
