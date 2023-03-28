@@ -44,14 +44,25 @@ export default function App() {
               <p> I have an exceptional ability to bring ideas to life, with a passion for creating unique and innovative solutions. I am a skilled and dedicated web and software developer who takes pride in their work and i look forward to creating innovative solutions that meet the unique needs of each of my clients.</p>
             </div>
             <div className='flex space-x-10 '>
-              {tags.map((tag, index) => {
-                return (
-                  <a key={index} className="rounded-3xl px-12 py-6 shadow-md bg-primaryMidnight text-white hover:shadow-2xl cursor-pointer transition ease-in-out delay-75">
-                    {tag}
-                  </a>
-                )
-              })}
+              <a href='https://github.com/Smylah' className="rounded-3xl px-12 py-6 shadow-md bg-primaryMidnight text-white hover:shadow-2xl cursor-pointer transition ease-in-out delay-75">
+                <BsGithub />
+              </a>
+              <a href='https://www.linkedin.com/in/ikenna-chima-4830131b7/' className="rounded-3xl px-12 py-6 shadow-md bg-primaryMidnight text-white hover:shadow-2xl cursor-pointer transition ease-in-out delay-75">
+                <BsLinkedin />
+              </a>
             </div >
+            {/* <div className='md:w-2/3'>
+              <h3>I am proficient in</h3>
+              <div className='flex flex-wrap gap-10'>
+                {skills.map((skill, index) => {
+                  return (
+                    <div key={index} className='rounded-3xl shadow-sm bg-primaryMidnight text-white px-12 text-sm py-4'>
+                      {skill}
+                    </div>
+                  )
+                })}
+              </div>
+            </div> */}
           </div >
           <div className='rounded-full border-4 flex border-primaryMidnight bg-gradient-to-bl from-blue-300 via-blue-100 to-blue-50 h-300 w-300 overflow-hidden '>
             <Image src={Nobg} alt='' className=' hover:scale-105 transition ease-in-out duration-500' />
@@ -59,28 +70,6 @@ export default function App() {
         </main >
       </section >
 
-      <section id='about' className='container mx-auto mt-64 space-y-32 px-20'>
-        <h1 >About Me</h1>
-        <div className='md:flex md:justify-around'>
-          <div className='md:w-1/2 p-20 border border-gray-50 shadow-md rounded-md'>
-            <p>My name is Ikenna Chima, a versatile developer capable of tackling complex projects. I have honed my skills in web development, software engineering, and user experience design through years of experience.</p><br />
-            <p>I understand the importance of effective communication and strive to ensure that my clients are satisfied with the final product. I work collaboratively with clients and stakeholders, taking their input into account throughout the development process and with a keen eye for detail, I am committed to delivering products that not only meet but exceed my clients expectations.</p><br />
-            <p>My passion for software development is evident in the high-quality solutions I produce and my impressive track record and commitment to excellence makes me a valuable asset to any organization or individual.</p>
-          </div>
-          <div className='md:w-1/3 space-y-24'>
-            <h5 className='text-center'>My skills and capabilities</h5>
-            <div className='flex flex-wrap gap-10'>
-              {skills.map((skill, index) => {
-                return (
-                  <div key={index} className='rounded-3xl shadow-sm border border-gray-50 px-12 py-6'>
-                    {skill}
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id='services' className='mt-64 mx-auto container px-20'>
         <h1 className='text-left mb-32'>What i do</h1>
@@ -123,6 +112,7 @@ export default function App() {
         </div>
       </section>
 
+
       <section id='work' className='container mx-auto my-64 space-y-32 px-20'>
         <h1>My Work</h1>
         <main className='lg:flex md:items-start space-y-20 lg:space-y-0 gap-30'>
@@ -151,12 +141,35 @@ export default function App() {
                 )
               })}
             </div>
-            <a className='flex flex-col justify-center bg-gray-100 rounded-lg mx-20 my-16 py-8  cursor-pointer hover:bg-primaryMidnight hover:text-white transition ease-in-out duration-500'>
+            <a href='https://drive.google.com/file/d/1_ARqYBECJ9pjfBUlgVvbiMxtr20iuj9N/view?usp=share_link' download="Ikenna-Resume" className='flex flex-col justify-center bg-gray-100 rounded-lg mx-20 my-16 py-8  cursor-pointer hover:bg-primaryMidnight hover:text-white transition ease-in-out duration-500'>
               <p className='flex justify-center gap-10 items-center'>Download Resume <BsArrowDownCircle /></p>
             </a>
           </div>
         </main>
       </section>
+
+      {/* <section id='about' className='container mx-auto mt-64 space-y-32 px-20'>
+        <h1 >About Me</h1>
+        <div className='md:flex md:justify-around'>
+          <div className='md:w-1/2 p-20 border border-gray-50 shadow-md rounded-md'>
+            <p>My name is Ikenna Chima, a versatile developer capable of tackling complex projects. I have honed my skills in web development, software engineering, and user experience design through years of experience.</p><br />
+            <p>I understand the importance of effective communication and strive to ensure that my clients are satisfied with the final product. I work collaboratively with clients and stakeholders, taking their input into account throughout the development process and with a keen eye for detail, I am committed to delivering products that not only meet but exceed my clients expectations.</p><br />
+            <p>My passion for software development is evident in the high-quality solutions I produce and my impressive track record and commitment to excellence makes me a valuable asset to any organization or individual.</p>
+          </div>
+          <div className='md:w-1/3 space-y-24'>
+            <h5 className='text-center'>My skills and capabilities</h5>
+            <div className='flex flex-wrap gap-10'>
+              {skills.map((skill, index) => {
+                return (
+                  <div key={index} className='rounded-3xl shadow-sm border border-gray-50 px-12 py-6'>
+                    {skill}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </section> */}
 
       <section id='contact' className='px-20'>
         <div className='container mx-auto rounded-3xl md:flex md:justify-between bg-primaryMidnight p-20 md:p-48  items-center space-y-10 md:space-y-0'>

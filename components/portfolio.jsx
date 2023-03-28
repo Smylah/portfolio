@@ -1,56 +1,45 @@
 import Image from "next/image"
 import { useState } from "react"
 import { BsArrowRight } from "react-icons/bs"
-import {
-  SiTailwindcss,
-  SiTypescript,
-  SiReact,
-  SiJavascript,
-  SiNextdotjs,
-  SiNuxtdotjs,
-  SiBootstrap,
-  SiCss3,
-  SiVuedotjs,
-} from "react-icons/si"
 
 const Portfolio = () => {
   const PortfolioData = [
     {
       technologies: ["HTML", "Tailwind"],
       title: "Interior Decoration Site",
-      image: "/../public/picture/interior-decor.png",
+      image: "1QPVkYwxf_Xut1l0KVa5D5iG7FkHYqZ0g",
       url: "https://interior-decor-site.netlify.app/",
       description:
         "Developed a stylish and user-friendly website for an interior decoration company, showcasing their portfolio of stunning designs and services. Built with modern web technologies and responsive design, the site offers seamless navigation across all devices.",
     },
     {
-      technologies: ["React", "Bootstrap"],
-      title: "Bookstore App for The SpringField Schools. ",
-      image: "/../public/picture/digital-bookstore.jpeg",
-      url: "https://smylah.github.io/bookstore-app/",
-      description:
-        "Developed a feature-rich and intuitive mobile app for a bookstore, enabling customers to browse, search and purchase books with ease. Designed with a clean and modern UI, the app offers a seamless shopping experience.",
-    },
-    {
-      technologies: ["React", "Sass"],
-      title: "Web design Project for a client",
-      image: "/../public/picture/ddhub.jpeg",
-      url: "https://smylah.github.io/ddhub/",
-      description:
-        "Developed a comprehensive service hire app that connects users with a wide range of professional services for a client. ",
-    },
-    {
       technologies: ["Vue", "Tailwind", "Typescript"],
       title: "Untitled app",
-      image: "/../public/picture/untitled-app.png",
+      image: "1opJ8zQ1RCOALwkPKhYA9JCnKkWG4mzam",
       url: "https://untitled-app.netlify.app/",
       description:
         "used this to showcase my skills in vue typescript and tailwind to a potential employer",
     },
     {
+      technologies: ["React", "Sass"],
+      title: "Web design Project for a client",
+      image: "1ljECV3Vt0PURfKt-gjfph-FCPZLcVZud",
+      url: "https://smylah.github.io/ddhub/",
+      description:
+        "Developed a comprehensive service hire app that connects users with a wide range of professional services for a client. ",
+    },
+    {
+      technologies: ["React", "Bootstrap"],
+      title: "Bookstore App for The SpringField Schools.",
+      image: "19evj17RW-ZVz-ph_AFlG_TdqaQ97PkZR",
+      url: "https://smylah.github.io/bookstore-app/",
+      description:
+        "Developed a feature-rich and intuitive mobile app for a bookstore, enabling customers to browse, search and purchase books with ease. Designed with a clean and modern UI, the app offers a seamless shopping experience.",
+    },
+    {
       technologies: ["Vue", "css"],
       title: "Vue Task Tracker",
-      image: "/../public/picture/task-tracker.png",
+      image: "1aswtB7bhKLTmBuax6Q1b271v7iLBiQHV",
       url: "https://vue-task-track.netlify.app/",
       description: "my first Project learning vue",
     },
@@ -76,7 +65,7 @@ const Portfolio = () => {
           >
             <Image
               alt={`image ${index}`}
-              src={image}
+              src={`https://drive.google.com/uc?export=view&id=${image}`}
               width={350}
               height={100}
               className="rounded-2xl shadow-md transition ease-in-out duration-500 hover:scale-105"
